@@ -1786,12 +1786,12 @@ input, select, textarea {
 
 	header.major h2 {
 		color: 	#7393B3;
-		font-size: 3.5em;
+		font-size: 3em;
 	}
 
 		header.major h2 + p {
 			color: #777;
-			font-size: 1.75em;
+			font-size: 1.5em;
 			font-weight: 700;
 			margin-top: -0.75em;
 		}
@@ -2382,7 +2382,7 @@ input, select, textarea {
 			text-decoration: none;
 			display: inline-block;
 			margin: 0 0 1.6875em 0;
-			padding: 0.35em 0 0 3.5em;
+			padding: 0.35em 0.35em 0 3.5em;
 			position: relative;
 			vertical-align: top;
 			width: 48%;
