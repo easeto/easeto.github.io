@@ -18,6 +18,30 @@
     </head>
        
     <body>
+        <script>
+            var projects = 'so what have i been working on...';
+            var work = 'so where have i been learning...';
+            var speed = 125;
+
+            var i = 0;
+            function typeProjects() {
+              if (i < projects.length) {
+                document.getElementById("recent-projects").innerHTML += projects.charAt(i);
+                i++;
+                setTimeout(typeProjects, speed);
+              }
+            }
+
+            var j=0;
+            function typeWork() {
+              if (j < work.length) {
+                document.getElementById("recent-work").innerHTML += work.charAt(j);
+                j++;
+                setTimeout(typeWork, speed);
+              }
+            }
+        </script>
+
         <div class="navigation">
             <nav class="navbar">
                 <button class="navtab" href="/">home</a>
@@ -35,9 +59,9 @@
             </div>
         </div>
 
-        <div class="projects">
+        <div class="projects" onmouseover="typeProjects()">
             <div class="project-title">
-                <h2 id="recent-projects">so what have i been working on...</h2>
+                <h2 id="recent-projects"></h2>
             </div>
 
             <div class="project-row">
@@ -82,6 +106,41 @@
                         <h4 class="project-heading project-subheader">Product Design, Prototyping, Manufacturing</h4>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="work" id="work" onmouseover="typeWork()">
+            <div class="work-title">
+                <h2 id="recent-work"></h2>
+            </div>
+
+            <div class="work-row">
+                <h3>Computer Science and Cognitive Science Major @ UPenn</h3>
+                <p>Relevant Courses: Marketing Strategy for Technology Platforms, 
+                    Product Design, Software Design/Engineer, Big Data Analytics, IntroIntroduction to Marketing, 
+                    Entrepreneurship, Entrepreneurship & Technology Innovation
+                </p>
+            </div>
+            <div class="work-row">
+                <h3>Product Manager @ Comcast</h3>
+                <p>I will be working with the <strong>Content Discovery Team</strong> this upcoming Summer 2022. I will 
+                    be leading a self-driven project of my own while assisting on an ongoing project 
+                    concurrently. (Summer 2022 - present)
+                </p>
+            </div>
+            <div class="work-row">
+                <h3>Investment Intern @ Plug and Play Tech Center</h3>
+                <p>I was an investment intern focused on conducting due diligence and evaluating <strong>Smart Tech </strong>
+                early-stage software and hardware companies and their products and services. We conducted 
+                biweekly investment calls where we analyzed and voted on ~3 companies. Most Participative Award. (Nov. 2021 - April 2022)</p>
+            </div>
+            <div class="work-row">
+                <h3>VP of Events @ Wharton Undergraduate Entrepreneurship Club</h3>
+            </div>
+            <div class="work-row">
+                <h3>Startup Experience</h3>
+                <h4>Product & Marketing Analytics, Data Research @ Ascend</h4>
+                <h4>Data Science Intern @ Locstat</h4>
             </div>
         </div>
     </body>
