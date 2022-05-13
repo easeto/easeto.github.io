@@ -50,6 +50,19 @@ h4 {
 
 .navtab:hover {
     background-color: #d0e4ec;
+}
+
+.navtab a:link {
+    text-decoration: none;
+    color: black;
+}
+  
+.navtab a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.navtab a:hover {
     color: white;
 }
 
