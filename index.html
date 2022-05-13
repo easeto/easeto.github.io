@@ -18,7 +18,7 @@
     </head>
        
     <body>
-        <script>
+        <!-- <script>
             var projects = 'so what have i been working on...';
             var work = 'so where have i been learning...';
             var speed = 125;
@@ -40,7 +40,7 @@
                 setTimeout(typeWork, speed);
               }
             }
-        </script>
+        </script> -->
 
         <div class="navigation">
             <nav class="navbar">
@@ -52,16 +52,16 @@
         <div class="intro">
             <div class="intro-title">
                 <h1>Ethan Seto</h1>
-                <h2>Product. Tech. Entrepreneurship.</h3>
-                <button class="intro-buttons" type="button" href="#work">work</button>
-                <button class="intro-buttons" type="button" href="#thoughts">thoughts</button>
-                <button class="intro-buttons" type="button" href="#goals">goals</button>
+                <h2>Product. Entrepreneurship. Design. Social Impact.</h3>
+                <button class="intro-buttons" type="button"><a href=#work>work</a></button>
+                <button class="intro-buttons" type="button"><a href=#thoughts>thoughts</a></button>
+                <button class="intro-buttons" type="button"><a href=#goals>goals</a></button>
             </div>
         </div>
 
         <div class="projects" onmouseover="typeProjects()">
             <div class="project-title">
-                <h2 id="recent-projects"></h2>
+                <h2 id="recent-projects">what have i been working on...</h2>
             </div>
 
             <div class="project-row">
@@ -109,38 +109,80 @@
             </div>
         </div>
 
-        <div class="work" id="work" onmouseover="typeWork()">
+        <div class="work-container" id="work" onmouseover="typeWork()">
             <div class="work-title">
-                <h2 id="recent-work"></h2>
+                <h2 id="recent-work">where have i been learning...</h2>
             </div>
 
             <div class="work-row">
-                <h3>Computer Science and Cognitive Science Major @ UPenn</h3>
-                <p>Relevant Courses: Marketing Strategy for Technology Platforms, 
+                <div class="work-description">
+                    <h3>Computer Science and Cognitive Science Major @ UPenn</h3>
+                    <p><strong>Relevant Courses: </strong>Marketing Strategy for Technology Platforms, 
                     Product Design, Software Design/Engineer, Big Data Analytics, IntroIntroduction to Marketing, 
                     Entrepreneurship, Entrepreneurship & Technology Innovation
-                </p>
+                    </p>
+                </div>
             </div>
             <div class="work-row">
-                <h3>Product Manager @ Comcast</h3>
-                <p>I will be working with the <strong>Content Discovery Team</strong> this upcoming Summer 2022. I will 
-                    be leading a self-driven project of my own while assisting on an ongoing project 
-                    concurrently. (Summer 2022 - present)
-                </p>
+                <div class="work-description">
+                    <h3>Product Manager @ Comcast</h3>
+                    <p>I will be working with the <strong>Content Discovery Team</strong> this upcoming Summer 2022. I will 
+                        be leading a self-driven project of my own while assisting on an ongoing project 
+                        concurrently. (Summer 2022 - present)
+                    </p>
+                </div>
             </div>
             <div class="work-row">
-                <h3>Investment Intern @ Plug and Play Tech Center</h3>
-                <p>I was an investment intern focused on conducting due diligence and evaluating <strong>Smart Tech </strong>
-                early-stage software and hardware companies and their products and services. We conducted 
-                biweekly investment calls where we analyzed and voted on ~3 companies. Most Participative Award. (Nov. 2021 - April 2022)</p>
+                <div class="work-description">
+                    <h3>Investment Intern @ Plug and Play Tech Center</h3>
+                    <p>I was an investment intern focused on conducting due diligence and evaluating <strong>Smart Tech </strong>
+                    early-stage software and hardware companies and their products and services. We conducted 
+                    biweekly investment calls where we analyzed and voted on ~3 companies. Most Participative Award. (Nov. 2021 - April 2022)</p>
+                </div>
             </div>
             <div class="work-row">
-                <h3>VP of Events @ Wharton Undergraduate Entrepreneurship Club</h3>
+                <div class="work-description">
+                    <h3>VP of Events @ Wharton Undergraduate Entrepreneurship Club</h3>
+                </div>
             </div>
             <div class="work-row">
-                <h3>Startup Experience</h3>
-                <h4>Product & Marketing Analytics, Data Research @ Ascend</h4>
-                <h4>Data Science Intern @ Locstat</h4>
+                <div class="work-description">
+                    <h3>Startup Experience</h3>
+                    <h4>Product & Marketing Analytics, Data Research @ Ascend</h4>
+                    <h4>Data Science Intern @ Locstat</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="goals-container" id="goals">
+            <div class="goals-title">
+                <h2 id="recent-work">what have i been doing...</h2>
+            </div>
+
+            <div class="goals-body">
+                <div class="goals-description">
+                    <div class="goals-row">
+                        <p><strong>When I'm free, I enjoy </strong></p>
+                        <ul>
+                            <li>film and tv - Wong Kar-Wai, Satoshi Kon, David Fincher </li>
+                            <li>racing my three dogs</li>
+                            <li>playing and coaching travel basketball</li>
+                            <li>practicing urban photography</li>
+                        </ul>
+                    </div>
+                    <div class="goals-row">
+                        <p><strong>I'm currently learning</strong></p>
+                        <ul>
+                            <li>how to speak Mandarin and Cantonese</li>
+                            <li>how to recreate movie scenes with animation</li>
+                            <li>how to cook Asian noodle soups</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="goals-images">
+                    <img class="blade-runner" src="imgs/vector-animation.png">
+                </div>
             </div>
         </div>
     </body>
