@@ -73,7 +73,7 @@ h4 {
 
 .name-title {
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-columns: 4fr 1fr;
 
     max-width: 80%;
 }
@@ -168,7 +168,7 @@ path {
     font-family: 'Fira Sans', sans-serif;
 }
 .project-description h3{
-    font-weight: 450;
+    font-weight: 400;
 }
 
 .img-container {
