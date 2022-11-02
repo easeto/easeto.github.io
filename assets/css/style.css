@@ -185,15 +185,23 @@ path {
     transform: scale(1);
 }
 
+.photo-container img {
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: 85;
+    transform: scale(1);
+}
+
 .img-container:hover img {
     transform: scale(1.3);
 }
 
-.work-container {
+.work-container, .photo-container {
     margin: 0% 8% 0% 8%;
 }
 
-.work-title, .goals-title {
+.work-title, .goals-title, .photo-title {
     margin-bottom: 5%;
 }
 
@@ -286,4 +294,22 @@ footer {
     margin: 5% 10% 10% 10%;
 
     text-align: left;
+}
+
+.photo-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-top: 5%;
+}
+
+.photo-container {
+    flex: 50%;
+}
+
+.single-photo {
+    flex: 33%;
+    margin: 2%;
+    max-width: 29%;
 }
